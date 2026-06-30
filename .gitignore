@@ -1,2 +1,14 @@
 dist
 node_modules
+target/
+temp/
+tmp/
+build/
+out/
+.gradle/
+.idea/
+.vscode/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
