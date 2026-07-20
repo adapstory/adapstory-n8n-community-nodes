@@ -1,0 +1,12 @@
+apiVersion: adapstory.io/ci/v1
+kind: node-library
+subject: adapstory-n8n-community-nodes
+workDir: .
+profile: default
+quality:
+  tests: false
+  coverage: false
+  staticAnalysis: false
+  minimumLineCoverage: 0
+  minimumModifiedLineCoverage: 0
+  maxNewIssues: 0

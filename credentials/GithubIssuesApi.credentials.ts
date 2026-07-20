@@ -14,7 +14,7 @@ export class GithubIssuesApi implements ICredentialType {
 	icon: Icon = { light: 'file:../icons/github.svg', dark: 'file:../icons/github.dark.svg' };
 
 	documentationUrl =
-		'https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#deleting-a-personal-access-token';
+		'https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens';
 
 	properties: INodeProperties[] = [
 		{

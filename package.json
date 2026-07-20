@@ -1,19 +1,19 @@
 {
-	"name": "n8n-nodes-<...>",
+	"name": "n8n-nodes-adapstory",
 	"version": "2026.04.1",
-	"description": "",
+	"description": "Adapstory-maintained n8n community nodes for LMS automation integrations.",
 	"license": "MIT",
 	"homepage": "",
 	"keywords": [
 		"n8n-community-node-package"
 	],
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "Adapstory",
+		"email": "engineering@adapstory.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/<...>/n8n-nodes-<...>.git"
+		"url": "https://github.com/adapstory/adapstory-n8n-community-nodes.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
@@ -29,7 +29,7 @@
 	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
-		"strict": true,
+		"strict": false,
 		"credentials": [
 			"dist/credentials/GithubIssuesApi.credentials.js",
 			"dist/credentials/GithubIssuesOAuth2Api.credentials.js"
@@ -40,11 +40,17 @@
 		]
 	},
 	"devDependencies": {
-		"@n8n/node-cli": "*",
+		"@n8n/node-cli": "0.23.0",
 		"eslint": "9.39.4",
+		"eslint-import-resolver-typescript": "^4.4.4",
 		"prettier": "3.8.1",
 		"release-it": "19.2.4",
 		"typescript": "5.9.3"
+	},
+	"overrides": {
+		"@n8n/node-cli": {
+			"change-case": "4.1.2"
+		}
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
